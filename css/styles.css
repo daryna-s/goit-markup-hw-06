@@ -310,6 +310,10 @@ address {
     background-color: var(--main-bg-cl);
     cursor: pointer;
 }
+.form-field {
+    display: flex;
+    margin-bottom: 10px;
+}
 /* особенности */
 
 .features-container {
