@@ -68,42 +68,88 @@
         <button class="button" type="button" data-modal-open>Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-            <button class="modal-btn" type="button"data-modal-close>
-                <svg class="modal-icon" width="18" height="18">
-                    <use href="./images/close-svg.svg#icon-close-black">
-                    </use>
-                </svg>
-            </button>
-        
-        <form class="form">
-            <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-            <div class="form-field">
-            <label>
-                Имя
-                <input type="text" name="Имя" autofocus />
-            </label>
+                <button class="modal-btn" type="button" data-modal-close>
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/close-svg.svg#icon-close-black">
+                        </use>
+                    </svg>
+                </button>
+
+                <form class="form">
+                    <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+                    
+                        <label class="form-label">
+                        <span class="label-text">Имя</span>
+                        <span class="input-box">
+                            <input 
+                            class="form-input" 
+                            type="text" 
+                            name="name"
+                             
+                            placeholder=" " 
+                            autofocus />
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-person-black">
+                                </use>
+                            </svg>
+                            </span>
+                            </label>
+                    
+                    
+                        <label class="form-label">
+                        <span class="label-text">Телефон</span>
+                        <span class="input-box">
+                            <input 
+                            class="form-input" 
+                            type="tel" 
+                            name="tel"
+                            
+                            placeholder=" " />
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-phone-black">
+                                </use>
+                            </svg>
+                            </span>
+                        </label>
+                    
+                    
+                        <label class="form-label">
+                        <span class="label-text">Почта</span>
+                        <span class="input-box">
+                            <input 
+                            class="form-input" 
+                            type="email" 
+                            name="email"
+                             
+                            placeholder=" ">
+                            <svg class="form-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-email-black">
+                                </use>
+                            </svg>
+                            </span>
+                            </label>
+                    
+                    <div class="form-field">
+                        <label class="form-label" for="comment">Комментарий</label>
+                            <textarea 
+                            class="comment"
+                            name="comment"
+                            id="comment" 
+                            placeholder="Введите текст"
+                            ></textarea>
+                    </div>
+                    <div class="form-field">
+                            <input 
+                            class="form-input" 
+                            type="checkbox" 
+                            name="Условия договора"
+                            id="policy" >
+                        <label class="form-label" for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    </div>
+                
+                    <button class="button" type="submit">Отправить</button>
+                </form>
             </div>
-            <div class="form-field">
-            <label>
-                Телефон
-                <input type="tel" name="Телефон" />
-            </label>
-            </div>
-            <div class="form-field">
-            <label>
-                Почта
-                <input type="email" name="Почта" placeholder="example@mail.com">
-            </label>
-            </div>
-            <div class="form-field">
-            <label>
-                Комментарий
-                <textarea name="Комментарий" placeholder="Введите текст"></textarea>
-            </label>
-            </div>
-            <button type="submit">Отправить</button>
-        </form>
-        </div>
         </div>
     </div>
 </section>
