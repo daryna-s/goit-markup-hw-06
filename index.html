@@ -130,7 +130,7 @@
                             </label>
                     
                     <div class="form-field">
-                        <label class="form-label" for="comment">Комментарий</label>
+                        <label class="label-text" for="comment">Комментарий</label>
                             <textarea 
                             class="comment"
                             name="comment"
@@ -138,14 +138,18 @@
                             placeholder="Введите текст"
                             ></textarea>
                     </div>
-                    <div class="form-field">
+                    
+                        <label class="form-checkbox">
                             <input 
-                            class="form-input" 
+                            class="checkbox" 
                             type="checkbox" 
-                            name="Условия договора"
-                            id="policy" >
-                        <label class="form-label" for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                    </div>
+                            name="Условия договора" >
+                            <svg class="form-check" width="16" height="15">
+                                <use href="./images/symbol-defs (3).svg#icon-icon-check">
+                                </use>
+                            <span class="icon-checkbox">Соглашаюсь с рассылкой и принимаю Условия договора</span>
+                        </label>
+                    
                 
                     <button class="button" type="submit">Отправить</button>
                 </form>
