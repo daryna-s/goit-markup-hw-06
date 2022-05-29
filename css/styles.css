@@ -391,9 +391,6 @@ address {
     border: 1px solid rgba(33, 33, 33, 0.2);
     cursor: pointer;
 }
-.comment:placeholder-shown {
-    color: rgba(117, 117, 117, 0.5);
-}
 .comment:not(:placeholder-shown) {
     color: var(--main-txt-cl);
 }
@@ -429,10 +426,10 @@ address {
 }
 .form-check {
     margin-right: 8px;
-    border: 2px solid var(--next3-txt-cl);
+    border: 3px solid var(--next3-txt-cl);
     border-radius: 2px;
 }
-.checkbox:checked+.form-check {
+.checkbox:checked + .form-check {
     background-color: var(--accent-bg-cl);
     fill: var(--main-bg-cl);
     background-size: contain;
@@ -771,13 +768,52 @@ address {
 .footer-socials-link:focus .footer-socials-icon {
     fill: var(--next2-txt-cl);
 }
+.footer-form {
+    margin-left: 93px;
+    display: inline-block;
+    align-items: baseline;
+}
+
+.footer-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-input {
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    background-color: var(--secondary-bg-cl);
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0;
+    cursor: pointer;
+}
+
+.footer-input:hover,
+.footer-input:focus {
+    border-color: var(--accent-bg-cl);
+}
+
+.footer-input:not(:placeholder-shown) {
+    color: var(--next2-txt-cl);
+}
+.footer-button-icon {
+    margin-left: 10px;
+}
 
 /* Portfolio */
 
 .portfolio-container {
     display: block;
 }
-
 /* кнопки фильтра */
 
 .filter-button {
